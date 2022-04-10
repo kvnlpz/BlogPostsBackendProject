@@ -1,0 +1,29 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.4'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.walnut'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = "14"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.7'
+    implementation group: 'org.json', name: 'json', version: '20090211'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+    testLogging.showStandardStreams = true
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+    }
+}
+targetCompatibility = JavaVersion.VERSION_14
