@@ -23,22 +23,7 @@ Request:
 Route: /api/posts
 Method: GET
 Query Parameters:
-|----------------------------------------------------------------------------------------------------------|
-|Field    |     Type          |      Description                |       Default         |        Example    |
-|-----------------------------------------------------------------------------------------------------------|
-|tags      |    String (required) |  A comma separated list of tags. |  N/A              |       science,tech|
-|-----------|----------------------|----------------------------------|-------------------|---------------------
-|sortBy     |   String (optional)  | The field to sort the posts by.  | The acceptable    |      fields are: |
-|           |                     |                                   | ● id              |      id popularity|
-|           |                     |                                   | ● reads            |                   |
-|           |                     |                                   | ● likes            |                   |
-|           |                     |                                   | ● popularity       |                   |
-|-----------|----------------------|-----------------------------------|----------------------|----------------     |
-|direction  |   String (optional) | The direction for sorting.    |     asc           |           asc    |
-|           |                     | The acceptable fields are:     |                      |              |
-|           |                     | ● desc                       |                             |           |
-|           |                     | ● asc                         |                        |                 |
-|-----------|---------------------|-------------------------------|-------------------------|------------------|
+![image](https://user-images.githubusercontent.com/7539561/167565518-2414eb5b-bcf0-4e3b-bb5f-14f6b872ca4b.png)
 
 
 Here is how the response look:
