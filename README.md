@@ -19,7 +19,6 @@ Response status code: 200
 ```
 
 
-```
 Request:
 Route: /api/posts
 Method: GET
@@ -40,7 +39,6 @@ Query Parameters:
 |           |                     | ● desc                       |                             |           |
 |           |                     | ● asc                         |                        |                 |
 |-----------------------------------------------------------------------------------------------------------|
-```
 
 
 Here is how the response look:
