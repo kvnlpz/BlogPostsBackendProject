@@ -110,7 +110,7 @@ JVM:          16.0.1 (Oracle Corporation 16.0.1+9-24)
 OS:           Windows 10 10.0 amd64
 
 
-#How to run:
+# How to run:
 
 Open a terminal/command prompt window in backend folder and run this command (without quotations):
 
