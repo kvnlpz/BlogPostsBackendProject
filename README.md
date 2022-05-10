@@ -69,16 +69,16 @@ Response status code: 400
 
 
 
-#REQUIREMENTS:
+# REQUIREMENTS:
 
 - MUST HAVE GRADLE VERSION Gradle >= 7.4.1
 - USED JAVA >= 16.0.1
 - OS: Windows 10 10.0 amd64 or Linux system
 
 
-#My Testing Environment Details:
+# My Testing Environment Details:
 
-###FOR LINUX UBUNTU:
+### FOR LINUX UBUNTU:
 
 java version "17.0.1" 2021-10-19 LTS
 Java (TM) SE Runtime Environment (build 17.0.1+12-LTS-39)
@@ -94,7 +94,7 @@ JVM:          1.8.0_312 (Private Build 25.312-b07)
 OS:           Linux 5.4.0-97-generic amd64
 
 
-###FOR WINDOWS 10:
+### FOR WINDOWS 10:
 
 java version "17" 2021-09-14 LTS
 Java(TM) SE Runtime Environment (build 17+35-LTS-2724)
