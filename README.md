@@ -1,3 +1,91 @@
+This is a simple backend JSON API. Written in Java and Spring Boot, this backend project is used to return results from the Hatchways blogs API. Since the Hatchways API only supports a single tag a time, it isn't suited for multiple requests and is inefficient for users. 
+
+In this project, The API response will be a list of all the blog posts that have at least one tag specified in the tags parameter. The sortBy parameter specifies which field should be used to sort the returned results. This is an optional parameter, with a default value of `id`. The direction parameter specifies if the results should be returned in ascending order (if the value is "asc") or descending order (if the value is "desc"). The default value of the direction parameter is `asc`.
+
+For every tag specified in the tags parameter, the backend project fetches the posts with that tag using the Hatchways API (making a separate API request for every tag specified). It then combines all the results from the API requests above and removes all the repeated posts. I made concurrent requests to the API to improve the response times and decrease error rates by requesting in parallel the same information.
+
+
+
+```
+Request:
+Route: /api/ping
+Method: GET
+Response:
+Response body (JSON):
+{
+  "success": true
+}
+Response status code: 200
+```
+
+
+```
+Request:
+Route: /api/posts
+Method: GET
+Query Parameters:
+----------------------------------------------------------------------------------------------------------
+Field    |     Type          |      Description                |       Default         |        Example|
+-----------------------------------------------------------------------------------------------------------
+tags      |    String (required) |  A comma separated list of tags.   N/A              |       science,tech|
+-----------------------------------------------------------------------------------------------------------
+sortBy     |   String (optional)  | The field to sort the posts by.  | The acceptable    |      fields are: |
+           |                     |                                   | ● id              |      id popularity|
+           |                      |                                  | ● reads            |                |
+           |                     |                                   | ● likes |                              |
+           |                    |                                   | ● popularity |                           |
+----------------------------------------------------------------------------------------------------------                                                                  
+direction  |   String (optional) | The direction for sorting.    |     asc           |           asc    |
+           |                     | The acceptable fields are:     |                      |              |
+           |                     | ● desc                       |                             |           |
+           |                     | ● asc                         |                        |                 |
+-----------------------------------------------------------------------------------------------------------
+```
+
+
+Here is how the response look:
+```
+{
+  "posts": [{
+  "id": 1,
+  "author": "Rylee Paul",
+  "authorId": 9,
+  "likes": 960,
+  "popularity": 0.13,
+  "reads": 50361,
+  "tags": [ "tech", "health" ]
+  },
+  ...
+  ]
+}
+Response status code: 20
+
+```
+
+
+If `tags` parameter is not present:
+```
+{
+  "error": "Tags parameter is required"
+}
+Response status code: 400
+```
+
+
+If a `sortBy` or `direction` are invalid values, specify an error like below:
+```
+{
+  "error": "sortBy parameter is invalid"
+}
+Response status code: 400
+```
+
+
+
+
+
+
+
 #REQUIREMENTS:
 
 - MUST HAVE GRADLE VERSION Gradle >= 7.4.1
