@@ -23,7 +23,6 @@ Request:
 Route: /api/posts
 Method: GET
 Query Parameters:
-|----------------------------------------------------------------------------------------------------------|
 |Field    |     Type          |      Description                |       Default         |        Example    |
 |-----------------------------------------------------------------------------------------------------------|
 |tags      |    String (required) |  A comma separated list of tags. |  N/A              |       science,tech|
@@ -38,7 +37,6 @@ Query Parameters:
 |           |                     | The acceptable fields are:     |                      |              |
 |           |                     | ● desc                       |                             |           |
 |           |                     | ● asc                         |                        |                 |
-|-----------------------------------------------------------------------------------------------------------|
 
 
 Here is how the response look:
