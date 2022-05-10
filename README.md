@@ -23,11 +23,11 @@ Request:
 Route: /api/posts
 Method: GET
 Query Parameters:
-![image](https://user-images.githubusercontent.com/7539561/167565518-2414eb5b-bcf0-4e3b-bb5f-14f6b872ca4b.png)
-
+![project](https://user-images.githubusercontent.com/7539561/167565872-e7f8cd89-5ee4-45bd-b3a9-0aee905461bc.png)
 
 Here is how the response look:
 ```
+
 {
   "posts": [{
   "id": 1,
