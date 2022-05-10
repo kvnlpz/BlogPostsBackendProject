@@ -144,5 +144,10 @@ gradlew :test --tests "com.walnut.backend.BackendApplicationTests"
 
 However, when running the previous "build" command, those unit tests are already ran. 
 
+Here are some sample pictures:
+
+![image](https://user-images.githubusercontent.com/7539561/167566469-c06f0428-8d35-4669-96aa-774fd3e82a54.png)
+![image](https://user-images.githubusercontent.com/7539561/167566513-527ccbca-f782-45ae-b55b-c3572cfa2e10.png)
+![image](https://user-images.githubusercontent.com/7539561/167566633-8fcc9ef7-6cb7-4973-ab88-623aa9223fad.png)
 
 
