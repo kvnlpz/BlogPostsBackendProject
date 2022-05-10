@@ -24,22 +24,22 @@ Request:
 Route: /api/posts
 Method: GET
 Query Parameters:
-----------------------------------------------------------------------------------------------------------
-Field    |     Type          |      Description                |       Default         |        Example|
------------------------------------------------------------------------------------------------------------
-tags      |    String (required) |  A comma separated list of tags.   N/A              |       science,tech|
------------------------------------------------------------------------------------------------------------
-sortBy     |   String (optional)  | The field to sort the posts by.  | The acceptable    |      fields are: |
-           |                     |                                   | ● id              |      id popularity|
-           |                      |                                  | ● reads            |                |
-           |                     |                                   | ● likes |                              |
-           |                    |                                   | ● popularity |                           |
-----------------------------------------------------------------------------------------------------------                                                                  
-direction  |   String (optional) | The direction for sorting.    |     asc           |           asc    |
-           |                     | The acceptable fields are:     |                      |              |
-           |                     | ● desc                       |                             |           |
-           |                     | ● asc                         |                        |                 |
------------------------------------------------------------------------------------------------------------
+|----------------------------------------------------------------------------------------------------------|
+|Field    |     Type          |      Description                |       Default         |        Example    |
+|-----------------------------------------------------------------------------------------------------------|
+|tags      |    String (required) |  A comma separated list of tags. |  N/A              |       science,tech|
+|-----------------------------------------------------------------------------------------------------------
+|sortBy     |   String (optional)  | The field to sort the posts by.  | The acceptable    |      fields are: |
+|           |                     |                                   | ● id              |      id popularity|
+|           |                     |                                   | ● reads            |                   |
+|           |                     |                                   | ● likes            |                   |
+|           |                     |                                   | ● popularity       |                   |
+|----------------------------------------------------------------------------------------------------------     |
+|direction  |   String (optional) | The direction for sorting.    |     asc           |           asc    |
+|           |                     | The acceptable fields are:     |                      |              |
+|           |                     | ● desc                       |                             |           |
+|           |                     | ● asc                         |                        |                 |
+|-----------------------------------------------------------------------------------------------------------|
 ```
 
 
